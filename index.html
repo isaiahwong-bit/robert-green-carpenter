@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Green Carpenter | Quality Carpentry & Home Maintenance | Melbourne</title>
+  <meta name="description" content="Professional carpentry and home maintenance services in Forest Hill, Melbourne. 4.8 star rated. Decking, renovations, custom carpentry, fencing, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ========================================
+       CSS RESET & BASE
+       ======================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #1a3a5c;
+      --primary-dark: #0f2640;
+      --primary-light: #2d5f8a;
+      --accent: #d4a053;
+      --accent-light: #e8c68a;
+      --accent-dark: #b8873a;
+      --bg-light: #f7f5f2;
+      --bg-cream: #faf8f5;
+      --bg-blue-tint: #f0f4f8;
+      --text-dark: #1a1a1a;
+      --text-body: #4a4a4a;
+      --text-muted: #7a7a7a;
+      --white: #ffffff;
+      --star: #f59e0b;
+      --border: #e5e1db;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.1);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-body);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ========================================
+       UTILITIES
+       ======================================== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .nav.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-logo-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--accent-light);
+    }
+
+    .nav-logo-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.2;
+    }
+
+    .nav-logo-text span {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-body);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 22px;
+      background: var(--primary);
+      color: var(--white) !important;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+    }
+
+    .nav-cta svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .nav-mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav-mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text-dark);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ========================================
+       HERO
+       ======================================== */
+    .hero {
+      position: relative;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      margin-top: 72px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600"><defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="1440" height="600" fill="url(%23grid)"/></svg>');
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      color: var(--white);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(212, 160, 83, 0.15);
+      border: 1px solid rgba(212, 160, 83, 0.3);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-light);
+      margin-bottom: 24px;
+    }
+
+    .hero-badge svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--accent);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 .highlight {
+      color: var(--accent-light);
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.8);
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .hero-stat {
+      text-align: left;
+    }
+
+    .hero-stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--accent-light);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-stat-value svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--star);
+    }
+
+    .hero-stat-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 2px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: var(--radius-full);
+      font-size: 0.95rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--primary-dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(212,160,83,0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Hero card */
+    .hero-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 24px;
+    }
+
+    .hero-card-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .hero-card-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-body);
+    }
+
+    .hero-card-list li svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .hero-card .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .hero-card-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* ========================================
+       TRUST BAR
+       ======================================== */
+    .trust-bar {
+      padding: 48px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-bar-inner {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 24px;
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 12px;
+    }
+
+    .trust-item svg {
+      width: 36px;
+      height: 36px;
+      fill: var(--primary);
+      margin: 0 auto 12px;
+    }
+
+    .trust-item p {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-body);
+      line-height: 1.4;
+    }
+
+    /* ========================================
+       ABOUT
+       ======================================== */
+    .about {
+      padding: 100px 0;
+      background: var(--white);
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-image-main {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--bg-blue-tint), var(--bg-cream));
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .about-image-main .initials {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--primary);
+      opacity: 0.15;
+    }
+
+    .about-image-main .carpenter-illustration {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image-main .carpenter-illustration svg {
+      width: 140px;
+      height: 140px;
+      fill: var(--primary);
+      opacity: 0.6;
+    }
+
+    .about-badge-float {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 16px 24px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .about-badge-float .stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .about-badge-float .stars svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--star);
+    }
+
+    .about-badge-float-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .about-badge-float-text strong {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+    }
+
+    .about-content .section-label {
+      margin-bottom: 12px;
+    }
+
+    .about-content .section-title {
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text-body);
+      margin-bottom: 28px;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .about-highlight {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px;
+      background: var(--bg-cream);
+      border-radius: var(--radius-sm);
+    }
+
+    .about-highlight svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .about-highlight span {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    /* ========================================
+       SERVICES
+       ======================================== */
+    .services {
+      padding: 100px 0;
+      background: var(--bg-blue-tint);
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .services-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid transparent;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(26, 58, 92, 0.08);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-blue-tint);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .service-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--primary);
+    }
+
+    .service-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ========================================
+       QUALITY SECTION
+       ======================================== */
+    .quality {
+      padding: 100px 0;
+      background: var(--white);
+    }
+
+    .quality-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .quality-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    .quality-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .quality-card {
+      text-align: center;
+      padding: 40px 24px;
+      background: var(--bg-cream);
+      border-radius: var(--radius-lg);
+      transition: transform 0.2s;
+    }
+
+    .quality-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .quality-card-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      background: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .quality-card-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--primary);
+    }
+
+    .quality-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .quality-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ========================================
+       REVIEWS
+       ======================================== */
+    .reviews {
+      padding: 100px 0;
+      background: var(--bg-blue-tint);
+    }
+
+    .reviews-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+
+    .reviews-header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .reviews-overall {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .reviews-overall-score {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    .reviews-overall .stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .reviews-overall .stars svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--star);
+    }
+
+    .reviews-overall-count {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .review-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .review-meta h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .review-meta .stars {
+      display: flex;
+      gap: 2px;
+      margin-top: 2px;
+    }
+
+    .review-meta .stars svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--star);
+    }
+
+    .review-text {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .review-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .reviews-cta {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .reviews-cta .btn {
+      background: var(--white);
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .reviews-cta .btn:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    /* Review scroll controls */
+    .reviews-scroll-wrapper {
+      position: relative;
+    }
+
+    .reviews-scroll-btn {
+      display: none;
+    }
+
+    /* ========================================
+       STATS
+       ======================================== */
+    .stats {
+      padding: 80px 0;
+      background: var(--primary-dark);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 20px;
+    }
+
+    .stat-value {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--accent-light);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ========================================
+       CONTACT / CTA
+       ======================================== */
+    .contact {
+      padding: 100px 0;
+      background: var(--white);
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+    }
+
+    .contact-info > p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-detail-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--bg-blue-tint);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--primary);
+    }
+
+    .contact-detail-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.2;
+    }
+
+    .contact-detail-text strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .contact-form-card {
+      background: var(--bg-cream);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+    }
+
+    .contact-form-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--text-dark);
+      background: var(--white);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(26, 58, 92, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .contact-form-card .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 16px;
+      font-size: 1rem;
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    .footer {
+      background: var(--primary-dark);
+      padding: 60px 0 30px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 30px;
+    }
+
+    .footer-brand {
+      max-width: 320px;
+    }
+
+    .footer-brand-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 60px;
+    }
+
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent-light);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    .footer-bottom a {
+      color: var(--accent-light);
+    }
+
+    /* ========================================
+       ANIMATIONS
+       ======================================== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ========================================
+       MOBILE NAV
+       ======================================== */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      padding: 24px;
+      box-shadow: var(--shadow-lg);
+      z-index: 999;
+      border-top: 1px solid var(--border);
+    }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 14px 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-body);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-menu a:last-child {
+      border-bottom: none;
+    }
+
+    .mobile-menu .btn {
+      width: 100%;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-card {
+        max-width: 480px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quality-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-mobile-toggle {
+        display: block;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 48px 0 60px;
+      }
+
+      .hero-stats {
+        gap: 24px;
+      }
+
+      .trust-bar-inner {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-bar-inner .trust-item:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quality-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reviews-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .footer-links {
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .quality-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-bar-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10z"/><polyline points="9 22 9 12 15 12 15 22" fill="none" stroke="#e8c68a" stroke-width="1.5"/></svg>
+        </div>
+        <div class="nav-logo-text">
+          Robert Green
+          <span>Carpenter</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a></li>
+      </ul>
+
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#reviews" onclick="closeMobile()">Reviews</a>
+    <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Get a Free Quote</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            4.8 Stars on Google Reviews
+          </div>
+          <h1>
+            Quality Carpentry<br>
+            <span class="highlight">You Can Trust</span>
+          </h1>
+          <p class="hero-desc">
+            Professional carpentry and home maintenance services across Melbourne. From timber decking to full renovations, Robert delivers workmanship par excellence.
+          </p>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-value">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                4.8
+              </div>
+              <div class="hero-stat-label">Google Rating</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">17+</div>
+              <div class="hero-stat-label">5-Star Reviews</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">10+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Get a Free Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn-outline">
+              View Services
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>How can Robert help?</h3>
+          <ul class="hero-card-list">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Timber decking &amp; pergolas
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Kitchen &amp; bathroom renovations
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Doors, windows &amp; repairs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Custom carpentry &amp; fine finishes
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Fencing, ramps &amp; general maintenance
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">
+            Request a Free Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="hero-card-note">Free, no-obligation quote. Fixed pricing available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <div class="trust-item fade-in">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p>Fully Insured &amp; Licensed</p>
+        </div>
+        <div class="trust-item fade-in">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <p>4.8 Star Google Rating</p>
+        </div>
+        <div class="trust-item fade-in">
+          <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" fill="none" stroke="#1a3a5c" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>Always On Time</p>
+        </div>
+        <div class="trust-item fade-in">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Fixed Quotes Available</p>
+        </div>
+        <div class="trust-item fade-in">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="#1a3a5c" stroke-width="2"/><path d="M9 22V12h6v10" fill="none" stroke="#1a3a5c" stroke-width="2"/></svg>
+          <p>Servicing All Melbourne</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-visual fade-in">
+          <div class="about-image-main">
+            <div class="carpenter-illustration">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="initials">RGC</div>
+          </div>
+          <div class="about-badge-float">
+            <div>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+            <div class="about-badge-float-text">
+              <strong>4.8 / 5.0</strong>
+              17 Google Reviews
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content fade-in">
+          <p class="section-label">About Robert</p>
+          <h2 class="section-title">A carpenter who genuinely cares about your home</h2>
+          <p class="about-text">
+            Based in Forest Hill, VIC, Robert Green has built a reputation for honest, high-quality carpentry across Melbourne. Whether it's a full bathroom renovation or a simple door repair, Robert brings the same level of care and precision to every job. His clients consistently describe him as patient, skilled, and a genuine pleasure to work with.
+          </p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Honest, upfront pricing</span>
+            </div>
+            <div class="about-highlight">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Dedicated to one job at a time</span>
+            </div>
+            <div class="about-highlight">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Clean &amp; tidy worksite</span>
+            </div>
+            <div class="about-highlight">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Meticulous attention to detail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header fade-in">
+        <p class="section-label">Services</p>
+        <h2 class="section-title">No job too big or small</h2>
+        <p class="section-subtitle">From a squeaky door to a complete renovation, Robert brings expert craftsmanship to every project.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="#1a3a5c" stroke-width="2"/><path d="M9 22V12h6v10" fill="none" stroke="#1a3a5c" stroke-width="2"/></svg>
+          </div>
+          <h3>Structural &amp; Renovations</h3>
+          <p>Opening up internal walls, bathroom and kitchen renovations, and laundry room modifications. Full-scope renovation work with expert precision.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="22" height="22" rx="2"/><line x1="1" y1="8" x2="23" y2="8"/><line x1="8" y1="1" x2="8" y2="23"/></svg>
+          </div>
+          <h3>Decking &amp; Pergolas</h3>
+          <p>Installation and repair of timber decking, pergolas, and outdoor structures. Built to last with quality materials and expert craftsmanship.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+          </div>
+          <h3>Fencing &amp; Ramps</h3>
+          <p>Timber fencing installation and repairs, specialized ramp building for accessibility, and boundary solutions built to specification.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <h3>Doors &amp; Windows</h3>
+          <p>Repair of warped or sticking doors, window architraves, skirting boards, lock maintenance, and door handle installations.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Custom &amp; Fine Carpentry</h3>
+          <p>Bespoke shelving, custom furniture, walk-in pantries, timber frames, and high-end finishes with meticulous attention to detail.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>General Maintenance</h3>
+          <p>Handyman tasks including flooring patches, flat-pack assembly, roof restorations, painting touch-ups, and all-around home repairs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICE QUALITY ========== -->
+  <section class="quality">
+    <div class="container">
+      <div class="quality-header fade-in">
+        <p class="section-label">Why Choose Robert</p>
+        <h2 class="section-title">What sets Robert apart</h2>
+        <p class="section-subtitle">Consistently rated 4.8 stars by customers across Melbourne.</p>
+      </div>
+
+      <div class="quality-grid">
+        <div class="quality-card fade-in">
+          <div class="quality-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Professional &amp; Reliable</h3>
+          <p>Always punctual, turns up on time, and provides fixed quotes or clear hourly rates upfront.</p>
+        </div>
+
+        <div class="quality-card fade-in">
+          <div class="quality-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>Attention to Detail</h3>
+          <p>Matching floor patches to existing boards, precise paintwork, and finishes that clients call "par excellence."</p>
+        </div>
+
+        <div class="quality-card fade-in">
+          <div class="quality-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Great Communication</h3>
+          <p>Honest, sincere, and a pleasure to work with. Listens patiently to your needs before providing a quote.</p>
+        </div>
+
+        <div class="quality-card fade-in">
+          <div class="quality-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3>Clean &amp; Dedicated</h3>
+          <p>Maintains a tidy worksite and stays dedicated to your project from start to finish without juggling multiple jobs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews-header fade-in">
+        <div>
+          <p class="section-label">Customer Reviews</p>
+          <h2 class="section-title">What clients are saying</h2>
+        </div>
+        <div class="reviews-header-right">
+          <div class="reviews-overall">
+            <span class="reviews-overall-score">4.8</span>
+            <div>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="reviews-overall-count">17 reviews on Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #6366f1;">CT</div>
+            <div class="review-meta">
+              <h4>Carolyn Thomas</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert did a fantastic job with my long list of jobs &mdash; filling in holes in the floor and walls after removal of gas ducted heating, removing a wall mounted air conditioner, fixing broken sash window cords and replacing a window architrave. His workmanship was outstanding. His communication was great and he arrived when he said he would. Unreservedly recommend.</p>
+          <p class="review-date">3 months ago</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #059669;">KI</div>
+            <div class="review-meta">
+              <h4>Kathy Innes</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert was extremely easy to deal with, arrived on time and did a superb job fixing our back door. He even went to the trouble of exactly matching the paint. We will be using him when we next need a great carpenter.</p>
+          <p class="review-date">2 months ago</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #d97706;">BC</div>
+            <div class="review-meta">
+              <h4>B C</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert has been great &mdash; patient, skillful, and with real attention to detail. He has successfully completed several complex jobs for me, always with excellent results. I would gladly use his services again in the future.</p>
+          <p class="review-date">4 months ago</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #7c3aed;">EW</div>
+            <div class="review-meta">
+              <h4>Evelyn Ward</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Rob did an excellent job of replacing our deck post. We highly recommend him for his carpentry skills and will use him again for any future work.</p>
+          <p class="review-date">3 weeks ago</p>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #0891b2;">AC</div>
+            <div class="review-meta">
+              <h4>Anthony Chan</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">I've hired Robert to do a number of carpentry jobs, including helping me assemble and install joinery, install door handles in my office and my home &mdash; he also installed a dog door at my home. He did a fantastic job &mdash; always on time, reliable, and did an amazing job. Could not recommend highly enough!</p>
+          <p class="review-date">10 months ago</p>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #dc2626;">JV</div>
+            <div class="review-meta">
+              <h4>John Verlin</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Excellent workmanship. Very precise and consultative. Robert is a very skilled Carpenter and a joy to have on a job.</p>
+          <p class="review-date">8 months ago</p>
+        </div>
+
+        <!-- Review 7 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #059669;">JC</div>
+            <div class="review-meta">
+              <h4>JenC</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert is a reliable trustworthy handyman &mdash; who I regularly use his services. Robert had stained decks, installed pull out ironing board, installed canopies over doors, small painting jobs and he is amazing putting flat packs together. I would highly recommend Robert and his services.</p>
+          <p class="review-date">1 year ago</p>
+        </div>
+
+        <!-- Review 8 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #be185d;">AD</div>
+            <div class="review-meta">
+              <h4>Ali Duffy</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert did a great job replacing the roof on my pergola, good communication, efficient worker. Would definitely recommend!</p>
+          <p class="review-date">2 months ago</p>
+        </div>
+
+        <!-- Review 9 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #4f46e5;">V</div>
+            <div class="review-meta">
+              <h4>Vinnie</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">We had Robert build us a timber frame for a wallpaper art piece and he did a wonderful job!</p>
+          <p class="review-date">5 months ago</p>
+        </div>
+      </div>
+
+      <div class="reviews-cta fade-in">
+        <a href="https://www.google.com/maps/place/Robert+Green+Carpenter" target="_blank" rel="noopener" class="btn">
+          View All Reviews on Google
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="width:16px;height:16px"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-value">4.8</div>
+          <div class="stat-label">Google Star Rating</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-value">17+</div>
+          <div class="stat-label">Happy Customer Reviews</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-value">10+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info fade-in">
+          <p class="section-label">Get in Touch</p>
+          <h2>Ready to start your project?</h2>
+          <p>Whether you need a quick repair or a full renovation, Robert is here to help. Get a free, no-obligation quote today.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Location</strong>
+                18 Stevens Rd, Forest Hill VIC 3131, Australia
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Phone</strong>
+                Call for a free quote
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Availability</strong>
+                Mon &ndash; Sat, flexible hours
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Service Area</strong>
+                Melbourne &amp; surrounding suburbs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card fade-in">
+          <h3>Request a Free Quote</h3>
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="04XX XXX XXX" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service">
+                <option value="">Select a service...</option>
+                <option>Structural &amp; Renovations</option>
+                <option>Decking &amp; Pergolas</option>
+                <option>Fencing &amp; Ramps</option>
+                <option>Doors &amp; Windows</option>
+                <option>Custom &amp; Fine Carpentry</option>
+                <option>General Maintenance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your project</label>
+              <textarea id="message" placeholder="Describe the work you need done..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send Quote Request
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Robert Green Carpenter</div>
+          <p>Professional carpentry and home maintenance services based in Forest Hill, Melbourne. Quality workmanship you can trust, every time.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Renovations</a></li>
+              <li><a href="#services">Decking &amp; Pergolas</a></li>
+              <li><a href="#services">Fencing &amp; Ramps</a></li>
+              <li><a href="#services">Custom Carpentry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Robert Green Carpenter. All rights reserved.</p>
+        <p>18 Stevens Rd, Forest Hill VIC 3131</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      const spans = mobileToggle.querySelectorAll('span');
+      if (mobileMenu.classList.contains('open')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+      const spans = mobileToggle.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    }
+
+    // Scroll nav shadow
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // Intersection observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.fade-in').forEach((el) => {
+      observer.observe(el);
+    });
+
+    // Form handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = '<span>Sent! We\'ll be in touch.</span>';
+      btn.style.background = '#059669';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3000);
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
