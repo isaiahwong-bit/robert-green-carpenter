@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YAZ Services | Property Maintenance & Handyman | Melbourne</title>
-  <meta name="description" content="Professional property maintenance and handyman services across Melbourne. Reliable, affordable, and quality workmanship. Call 0431 503 666 for a free quote.">
+  <title>Robert Green Carpenter | Quality Carpentry & Home Maintenance | Melbourne</title>
+  <meta name="description" content="Professional carpentry and home maintenance services in Forest Hill, Melbourne. 4.8 star rated. Decking, renovations, custom carpentry, fencing, and more.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,21 +19,21 @@
     }
 
     :root {
-      --primary: #1b6b3a;
-      --primary-dark: #0e4423;
-      --primary-light: #2a8f50;
-      --accent: #e8a020;
-      --accent-light: #f0c060;
-      --accent-dark: #c8881a;
-      --bg-light: #f5f7f5;
-      --bg-cream: #f8faf8;
-      --bg-green-tint: #eef5ef;
+      --primary: #1a3a5c;
+      --primary-dark: #0f2640;
+      --primary-light: #2d5f8a;
+      --accent: #d4a053;
+      --accent-light: #e8c68a;
+      --accent-dark: #b8873a;
+      --bg-light: #f7f5f2;
+      --bg-cream: #faf8f5;
+      --bg-blue-tint: #f0f4f8;
       --text-dark: #1a1a1a;
       --text-body: #4a4a4a;
       --text-muted: #7a7a7a;
       --white: #ffffff;
       --star: #f59e0b;
-      --border: #dde5dd;
+      --border: #e5e1db;
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
       --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
       --shadow-lg: 0 8px 30px rgba(0,0,0,0.1);
@@ -266,8 +266,8 @@
       align-items: center;
       gap: 8px;
       padding: 6px 16px;
-      background: rgba(232, 160, 32, 0.15);
-      border: 1px solid rgba(232, 160, 32, 0.3);
+      background: rgba(212, 160, 83, 0.15);
+      border: 1px solid rgba(212, 160, 83, 0.3);
       border-radius: var(--radius-full);
       font-size: 0.8rem;
       font-weight: 600;
@@ -359,7 +359,7 @@
     .btn-primary:hover {
       background: var(--accent-light);
       transform: translateY(-2px);
-      box-shadow: 0 4px 16px rgba(232,160,32,0.4);
+      box-shadow: 0 4px 16px rgba(212,160,83,0.4);
     }
 
     .btn-outline {
@@ -485,7 +485,7 @@
     .about-image-main {
       width: 100%;
       aspect-ratio: 4/3;
-      background: linear-gradient(135deg, var(--bg-green-tint), var(--bg-cream));
+      background: linear-gradient(135deg, var(--bg-blue-tint), var(--bg-cream));
       border-radius: var(--radius-lg);
       overflow: hidden;
       display: flex;
@@ -501,7 +501,7 @@
       opacity: 0.15;
     }
 
-    .about-image-main .about-illustration {
+    .about-image-main .carpenter-illustration {
       position: absolute;
       inset: 0;
       display: flex;
@@ -509,7 +509,7 @@
       justify-content: center;
     }
 
-    .about-image-main .about-illustration svg {
+    .about-image-main .carpenter-illustration svg {
       width: 140px;
       height: 140px;
       fill: var(--primary);
@@ -600,7 +600,7 @@
        ======================================== */
     .services {
       padding: 100px 0;
-      background: var(--bg-green-tint);
+      background: var(--bg-blue-tint);
     }
 
     .services-header {
@@ -629,13 +629,13 @@
     .service-card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-lg);
-      border-color: rgba(27, 107, 58, 0.08);
+      border-color: rgba(26, 58, 92, 0.08);
     }
 
     .service-icon {
       width: 56px;
       height: 56px;
-      background: var(--bg-green-tint);
+      background: var(--bg-blue-tint);
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
@@ -733,7 +733,7 @@
        ======================================== */
     .reviews {
       padding: 100px 0;
-      background: var(--bg-green-tint);
+      background: var(--bg-blue-tint);
     }
 
     .reviews-header {
@@ -870,6 +870,15 @@
       color: var(--white);
     }
 
+    /* Review scroll controls */
+    .reviews-scroll-wrapper {
+      position: relative;
+    }
+
+    .reviews-scroll-btn {
+      display: none;
+    }
+
     /* ========================================
        STATS
        ======================================== */
@@ -946,7 +955,7 @@
     .contact-detail-icon {
       width: 48px;
       height: 48px;
-      background: var(--bg-green-tint);
+      background: var(--bg-blue-tint);
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
@@ -1017,7 +1026,7 @@
     .form-group textarea:focus,
     .form-group select:focus {
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(27, 107, 58, 0.1);
+      box-shadow: 0 0 0 3px rgba(26, 58, 92, 0.1);
     }
 
     .form-group textarea {
@@ -1304,11 +1313,11 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo">
         <div class="nav-logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="#f0c060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10z"/><polyline points="9 22 9 12 15 12 15 22" fill="none" stroke="#e8c68a" stroke-width="1.5"/></svg>
         </div>
         <div class="nav-logo-text">
-          YAZ Services
-          <span>Property Maintenance</span>
+          Robert Green
+          <span>Carpenter</span>
         </div>
       </a>
 
@@ -1345,30 +1354,30 @@
         <div class="hero-content">
           <div class="hero-badge">
             <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            5 Stars on Google Reviews
+            4.8 Stars on Google Reviews
           </div>
           <h1>
-            Your Local<br>
-            <span class="highlight">Property Experts</span>
+            Quality Carpentry<br>
+            <span class="highlight">You Can Trust</span>
           </h1>
           <p class="hero-desc">
-            Professional property maintenance and handyman services across Melbourne. From quick repairs to full property upkeep, YAZ Services delivers reliable, quality workmanship every time.
+            Professional carpentry and home maintenance services across Melbourne. From timber decking to full renovations, Robert delivers workmanship par excellence.
           </p>
           <div class="hero-stats">
             <div class="hero-stat">
               <div class="hero-stat-value">
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                5.0
+                4.8
               </div>
               <div class="hero-stat-label">Google Rating</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-value">100%</div>
+              <div class="hero-stat-value">17+</div>
               <div class="hero-stat-label">5-Star Reviews</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-value">Melbourne</div>
-              <div class="hero-stat-label">Wide Coverage</div>
+              <div class="hero-stat-value">10+</div>
+              <div class="hero-stat-label">Years Experience</div>
             </div>
           </div>
           <div class="hero-actions">
@@ -1383,34 +1392,34 @@
         </div>
 
         <div class="hero-card">
-          <h3>How can we help?</h3>
+          <h3>How can Robert help?</h3>
           <ul class="hero-card-list">
             <li>
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1b6b3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              General repairs &amp; maintenance
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Timber decking &amp; pergolas
             </li>
             <li>
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1b6b3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Painting &amp; patching
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Kitchen &amp; bathroom renovations
             </li>
             <li>
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1b6b3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Carpentry &amp; timber work
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Doors, windows &amp; repairs
             </li>
             <li>
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1b6b3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Furniture assembly &amp; installation
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Custom carpentry &amp; fine finishes
             </li>
             <li>
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1b6b3a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Property upkeep &amp; outdoor work
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#1a3a5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Fencing, ramps &amp; general maintenance
             </li>
           </ul>
-          <a href="tel:0431503666" class="btn btn-primary">
-            Call 0431 503 666
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="#contact" class="btn btn-primary">
+            Request a Free Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <p class="hero-card-note">Free, no-obligation quote. Competitive pricing.</p>
+          <p class="hero-card-note">Free, no-obligation quote. Fixed pricing available.</p>
         </div>
       </div>
     </div>
@@ -1422,22 +1431,22 @@
       <div class="trust-bar-inner">
         <div class="trust-item fade-in">
           <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <p>Fully Insured</p>
+          <p>Fully Insured &amp; Licensed</p>
         </div>
         <div class="trust-item fade-in">
           <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <p>5 Star Google Rating</p>
+          <p>4.8 Star Google Rating</p>
         </div>
         <div class="trust-item fade-in">
-          <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" fill="none" stroke="#1b6b3a" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"/></svg>
-          <p>Reliable &amp; On Time</p>
+          <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" fill="none" stroke="#1a3a5c" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"/></svg>
+          <p>Always On Time</p>
         </div>
         <div class="trust-item fade-in">
-          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <p>Competitive Pricing</p>
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Fixed Quotes Available</p>
         </div>
         <div class="trust-item fade-in">
-          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="#1b6b3a" stroke-width="2"/><path d="M9 22V12h6v10" fill="none" stroke="#1b6b3a" stroke-width="2"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="#1a3a5c" stroke-width="2"/><path d="M9 22V12h6v10" fill="none" stroke="#1a3a5c" stroke-width="2"/></svg>
           <p>Servicing All Melbourne</p>
         </div>
       </div>
@@ -1450,10 +1459,10 @@
       <div class="about-inner">
         <div class="about-visual fade-in">
           <div class="about-image-main">
-            <div class="about-illustration">
-              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="#1b6b3a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="carpenter-illustration">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="#1a3a5c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <div class="initials">YAZ</div>
+            <div class="initials">RGC</div>
           </div>
           <div class="about-badge-float">
             <div>
@@ -1466,34 +1475,34 @@
               </div>
             </div>
             <div class="about-badge-float-text">
-              <strong>5.0 / 5.0</strong>
-              Google Reviews
+              <strong>4.8 / 5.0</strong>
+              17 Google Reviews
             </div>
           </div>
         </div>
 
         <div class="about-content fade-in">
-          <p class="section-label">About YAZ Services</p>
-          <h2 class="section-title">Property maintenance you can count on</h2>
+          <p class="section-label">About Robert</p>
+          <h2 class="section-title">A carpenter who genuinely cares about your home</h2>
           <p class="about-text">
-            Based in Melbourne's eastern suburbs, YAZ Services provides reliable property maintenance and handyman solutions for homes and businesses across the city. Whether it's a quick fix, a full property refresh, or ongoing maintenance, we bring professionalism and care to every job. Our clients trust us because we show up on time, communicate clearly, and deliver quality results.
+            Based in Forest Hill, VIC, Robert Green has built a reputation for honest, high-quality carpentry across Melbourne. Whether it's a full bathroom renovation or a simple door repair, Robert brings the same level of care and precision to every job. His clients consistently describe him as patient, skilled, and a genuine pleasure to work with.
           </p>
           <div class="about-highlights">
             <div class="about-highlight">
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#e8a020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span>Honest, upfront pricing</span>
             </div>
             <div class="about-highlight">
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#e8a020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>Reliable &amp; punctual</span>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Dedicated to one job at a time</span>
             </div>
             <div class="about-highlight">
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#e8a020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               <span>Clean &amp; tidy worksite</span>
             </div>
             <div class="about-highlight">
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#e8a020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span>No job too big or small</span>
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="#d4a053" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Meticulous attention to detail</span>
             </div>
           </div>
         </div>
@@ -1506,57 +1515,57 @@
     <div class="container">
       <div class="services-header fade-in">
         <p class="section-label">Services</p>
-        <h2 class="section-title">Complete property care</h2>
-        <p class="section-subtitle">From a leaking tap to a backyard makeover, YAZ Services has you covered with expert property maintenance.</p>
+        <h2 class="section-title">No job too big or small</h2>
+        <p class="section-subtitle">From a squeaky door to a complete renovation, Robert brings expert craftsmanship to every project.</p>
       </div>
 
       <div class="services-grid">
         <div class="service-card fade-in">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="#1b6b3a" stroke-width="2"/><path d="M9 22V12h6v10" fill="none" stroke="#1b6b3a" stroke-width="2"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="#1a3a5c" stroke-width="2"/><path d="M9 22V12h6v10" fill="none" stroke="#1a3a5c" stroke-width="2"/></svg>
           </div>
-          <h3>General Repairs</h3>
-          <p>Door fixes, wall patching, lock replacements, shelving, and all-around home repairs handled quickly and professionally.</p>
+          <h3>Structural &amp; Renovations</h3>
+          <p>Opening up internal walls, bathroom and kitchen renovations, and laundry room modifications. Full-scope renovation work with expert precision.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="1" width="22" height="22" rx="2"/><line x1="1" y1="8" x2="23" y2="8"/><line x1="8" y1="1" x2="8" y2="23"/></svg>
           </div>
-          <h3>Painting &amp; Patching</h3>
-          <p>Interior and exterior painting, wall patching, touch-ups, and surface preparation. Clean lines and a professional finish every time.</p>
+          <h3>Decking &amp; Pergolas</h3>
+          <p>Installation and repair of timber decking, pergolas, and outdoor structures. Built to last with quality materials and expert craftsmanship.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
           </div>
-          <h3>Carpentry &amp; Timber</h3>
-          <p>Decking, pergolas, fencing, timber repairs, custom shelving, and structural carpentry work built to last.</p>
+          <h3>Fencing &amp; Ramps</h3>
+          <p>Timber fencing installation and repairs, specialized ramp building for accessibility, and boundary solutions built to specification.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
           </div>
-          <h3>Assembly &amp; Installation</h3>
-          <p>Flat-pack furniture assembly, TV mounting, curtain rod installation, appliance setup, and all types of fixture fitting.</p>
+          <h3>Doors &amp; Windows</h3>
+          <p>Repair of warped or sticking doors, window architraves, skirting boards, lock maintenance, and door handle installations.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="10"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <h3>Outdoor &amp; Garden</h3>
-          <p>Garden maintenance, pressure washing, gutter cleaning, fence repairs, outdoor structures, and general yard upkeep.</p>
+          <h3>Custom &amp; Fine Carpentry</h3>
+          <p>Bespoke shelving, custom furniture, walk-in pantries, timber frames, and high-end finishes with meticulous attention to detail.</p>
         </div>
 
         <div class="service-card fade-in">
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3>Property Maintenance</h3>
-          <p>Regular property upkeep, pre-sale touch-ups, rental property maintenance, and commercial building care tailored to your needs.</p>
+          <h3>General Maintenance</h3>
+          <p>Handyman tasks including flooring patches, flat-pack assembly, roof restorations, painting touch-ups, and all-around home repairs.</p>
         </div>
       </div>
     </div>
@@ -1566,42 +1575,42 @@
   <section class="quality">
     <div class="container">
       <div class="quality-header fade-in">
-        <p class="section-label">Why Choose YAZ</p>
-        <h2 class="section-title">What sets us apart</h2>
-        <p class="section-subtitle">Trusted by property owners across Melbourne for reliable, quality service.</p>
+        <p class="section-label">Why Choose Robert</p>
+        <h2 class="section-title">What sets Robert apart</h2>
+        <p class="section-subtitle">Consistently rated 4.8 stars by customers across Melbourne.</p>
       </div>
 
       <div class="quality-grid">
         <div class="quality-card fade-in">
           <div class="quality-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
           </div>
-          <h3>Reliable &amp; Punctual</h3>
-          <p>We show up on time, every time. Clear scheduling and honest timelines you can count on.</p>
+          <h3>Professional &amp; Reliable</h3>
+          <p>Always punctual, turns up on time, and provides fixed quotes or clear hourly rates upfront.</p>
         </div>
 
         <div class="quality-card fade-in">
           <div class="quality-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
           </div>
           <h3>Attention to Detail</h3>
-          <p>Every job is finished to a high standard. We take pride in getting the details right the first time.</p>
+          <p>Matching floor patches to existing boards, precise paintwork, and finishes that clients call "par excellence."</p>
         </div>
 
         <div class="quality-card fade-in">
           <div class="quality-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
-          <h3>Clear Communication</h3>
-          <p>Upfront quotes, regular updates, and no surprises. We keep you informed from start to finish.</p>
+          <h3>Great Communication</h3>
+          <p>Honest, sincere, and a pleasure to work with. Listens patiently to your needs before providing a quote.</p>
         </div>
 
         <div class="quality-card fade-in">
           <div class="quality-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <h3>Quality Guaranteed</h3>
-          <p>We stand behind our work. If you're not happy, we'll make it right &mdash; that's our promise.</p>
+          <h3>Clean &amp; Dedicated</h3>
+          <p>Maintains a tidy worksite and stays dedicated to your project from start to finish without juggling multiple jobs.</p>
         </div>
       </div>
     </div>
@@ -1613,11 +1622,11 @@
       <div class="reviews-header fade-in">
         <div>
           <p class="section-label">Customer Reviews</p>
-          <h2 class="section-title">What our clients say</h2>
+          <h2 class="section-title">What clients are saying</h2>
         </div>
         <div class="reviews-header-right">
           <div class="reviews-overall">
-            <span class="reviews-overall-score">5.0</span>
+            <span class="reviews-overall-score">4.8</span>
             <div>
               <div class="stars">
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1626,7 +1635,7 @@
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               </div>
-              <span class="reviews-overall-count">Reviews on Google</span>
+              <span class="reviews-overall-count">17 reviews on Google</span>
             </div>
           </div>
         </div>
@@ -1636,9 +1645,9 @@
         <!-- Review 1 -->
         <div class="review-card fade-in">
           <div class="review-header">
-            <div class="review-avatar" style="background: #1b6b3a;">S</div>
+            <div class="review-avatar" style="background: #6366f1;">CT</div>
             <div class="review-meta">
-              <h4>Satisfied Customer</h4>
+              <h4>Carolyn Thomas</h4>
               <div class="stars">
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1648,16 +1657,16 @@
               </div>
             </div>
           </div>
-          <p class="review-text">Excellent service from start to finish. YAZ was reliable, on time, and the quality of work was outstanding. Would highly recommend for any property maintenance needs.</p>
-          <p class="review-date">Google Review</p>
+          <p class="review-text">Robert did a fantastic job with my long list of jobs &mdash; filling in holes in the floor and walls after removal of gas ducted heating, removing a wall mounted air conditioner, fixing broken sash window cords and replacing a window architrave. His workmanship was outstanding. His communication was great and he arrived when he said he would. Unreservedly recommend.</p>
+          <p class="review-date">3 months ago</p>
         </div>
 
         <!-- Review 2 -->
         <div class="review-card fade-in">
           <div class="review-header">
-            <div class="review-avatar" style="background: #059669;">H</div>
+            <div class="review-avatar" style="background: #059669;">KI</div>
             <div class="review-meta">
-              <h4>Happy Homeowner</h4>
+              <h4>Kathy Innes</h4>
               <div class="stars">
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1667,16 +1676,16 @@
               </div>
             </div>
           </div>
-          <p class="review-text">Great communication throughout the project. Fair pricing and the work was completed to a high standard. I'll definitely be using YAZ Services again for future jobs.</p>
-          <p class="review-date">Google Review</p>
+          <p class="review-text">Robert was extremely easy to deal with, arrived on time and did a superb job fixing our back door. He even went to the trouble of exactly matching the paint. We will be using him when we next need a great carpenter.</p>
+          <p class="review-date">2 months ago</p>
         </div>
 
         <!-- Review 3 -->
         <div class="review-card fade-in">
           <div class="review-header">
-            <div class="review-avatar" style="background: #d97706;">R</div>
+            <div class="review-avatar" style="background: #d97706;">BC</div>
             <div class="review-meta">
-              <h4>Repeat Client</h4>
+              <h4>B C</h4>
               <div class="stars">
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1686,13 +1695,127 @@
               </div>
             </div>
           </div>
-          <p class="review-text">I've used YAZ Services multiple times now and they never disappoint. Professional, tidy, and always deliver exactly what's promised. Highly recommend to anyone in Melbourne.</p>
-          <p class="review-date">Google Review</p>
+          <p class="review-text">Robert has been great &mdash; patient, skillful, and with real attention to detail. He has successfully completed several complex jobs for me, always with excellent results. I would gladly use his services again in the future.</p>
+          <p class="review-date">4 months ago</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #7c3aed;">EW</div>
+            <div class="review-meta">
+              <h4>Evelyn Ward</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Rob did an excellent job of replacing our deck post. We highly recommend him for his carpentry skills and will use him again for any future work.</p>
+          <p class="review-date">3 weeks ago</p>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #0891b2;">AC</div>
+            <div class="review-meta">
+              <h4>Anthony Chan</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">I've hired Robert to do a number of carpentry jobs, including helping me assemble and install joinery, install door handles in my office and my home &mdash; he also installed a dog door at my home. He did a fantastic job &mdash; always on time, reliable, and did an amazing job. Could not recommend highly enough!</p>
+          <p class="review-date">10 months ago</p>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #dc2626;">JV</div>
+            <div class="review-meta">
+              <h4>John Verlin</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Excellent workmanship. Very precise and consultative. Robert is a very skilled Carpenter and a joy to have on a job.</p>
+          <p class="review-date">8 months ago</p>
+        </div>
+
+        <!-- Review 7 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #059669;">JC</div>
+            <div class="review-meta">
+              <h4>JenC</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert is a reliable trustworthy handyman &mdash; who I regularly use his services. Robert had stained decks, installed pull out ironing board, installed canopies over doors, small painting jobs and he is amazing putting flat packs together. I would highly recommend Robert and his services.</p>
+          <p class="review-date">1 year ago</p>
+        </div>
+
+        <!-- Review 8 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #be185d;">AD</div>
+            <div class="review-meta">
+              <h4>Ali Duffy</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">Robert did a great job replacing the roof on my pergola, good communication, efficient worker. Would definitely recommend!</p>
+          <p class="review-date">2 months ago</p>
+        </div>
+
+        <!-- Review 9 -->
+        <div class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" style="background: #4f46e5;">V</div>
+            <div class="review-meta">
+              <h4>Vinnie</h4>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">We had Robert build us a timber frame for a wallpaper art piece and he did a wonderful job!</p>
+          <p class="review-date">5 months ago</p>
         </div>
       </div>
 
       <div class="reviews-cta fade-in">
-        <a href="https://maps.app.goo.gl/oRzuxDyHsvMyvYzP9" target="_blank" rel="noopener" class="btn">
+        <a href="https://www.google.com/maps/place/Robert+Green+Carpenter" target="_blank" rel="noopener" class="btn">
           View All Reviews on Google
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="width:16px;height:16px"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
         </a>
@@ -1705,16 +1828,16 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-in">
-          <div class="stat-value">5.0</div>
+          <div class="stat-value">4.8</div>
           <div class="stat-label">Google Star Rating</div>
         </div>
         <div class="stat-item fade-in">
-          <div class="stat-value">100%</div>
-          <div class="stat-label">Customer Satisfaction</div>
+          <div class="stat-value">17+</div>
+          <div class="stat-label">Happy Customer Reviews</div>
         </div>
         <div class="stat-item fade-in">
-          <div class="stat-value">Melbourne</div>
-          <div class="stat-label">Wide Service Area</div>
+          <div class="stat-value">10+</div>
+          <div class="stat-label">Years of Experience</div>
         </div>
       </div>
     </div>
@@ -1726,44 +1849,44 @@
       <div class="contact-inner">
         <div class="contact-info fade-in">
           <p class="section-label">Get in Touch</p>
-          <h2>Ready to get started?</h2>
-          <p>Whether you need a quick repair or ongoing property maintenance, YAZ Services is here to help. Get a free, no-obligation quote today.</p>
+          <h2>Ready to start your project?</h2>
+          <p>Whether you need a quick repair or a full renovation, Robert is here to help. Get a free, no-obligation quote today.</p>
 
           <div class="contact-details">
             <div class="contact-detail">
               <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Location</strong>
+                18 Stevens Rd, Forest Hill VIC 3131, Australia
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
               </div>
               <div class="contact-detail-text">
                 <strong>Phone</strong>
-                <a href="tel:0431503666">0431 503 666</a>
+                Call for a free quote
               </div>
             </div>
             <div class="contact-detail">
               <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div class="contact-detail-text">
-                <strong>Email</strong>
-                <a href="mailto:info@yazservices.com.au">info@yazservices.com.au</a>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div class="contact-detail-text">
-                <strong>Service Area</strong>
-                Melbourne &amp; surrounding suburbs
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b6b3a" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
               </div>
               <div class="contact-detail-text">
                 <strong>Availability</strong>
                 Mon &ndash; Sat, flexible hours
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#1a3a5c" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Service Area</strong>
+                Melbourne &amp; surrounding suburbs
               </div>
             </div>
           </div>
@@ -1790,12 +1913,12 @@
               <label for="service">Service Needed</label>
               <select id="service">
                 <option value="">Select a service...</option>
-                <option>General Repairs</option>
-                <option>Painting &amp; Patching</option>
-                <option>Carpentry &amp; Timber</option>
-                <option>Assembly &amp; Installation</option>
-                <option>Outdoor &amp; Garden</option>
-                <option>Property Maintenance</option>
+                <option>Structural &amp; Renovations</option>
+                <option>Decking &amp; Pergolas</option>
+                <option>Fencing &amp; Ramps</option>
+                <option>Doors &amp; Windows</option>
+                <option>Custom &amp; Fine Carpentry</option>
+                <option>General Maintenance</option>
                 <option>Other</option>
               </select>
             </div>
@@ -1818,8 +1941,8 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <div class="footer-brand-name">YAZ Services</div>
-          <p>Professional property maintenance and handyman services across Melbourne. Reliable workmanship you can trust, every time.</p>
+          <div class="footer-brand-name">Robert Green Carpenter</div>
+          <p>Professional carpentry and home maintenance services based in Forest Hill, Melbourne. Quality workmanship you can trust, every time.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
@@ -1834,26 +1957,17 @@
           <div class="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#services">General Repairs</a></li>
-              <li><a href="#services">Painting &amp; Patching</a></li>
-              <li><a href="#services">Carpentry &amp; Timber</a></li>
-              <li><a href="#services">Property Maintenance</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="tel:0431503666">0431 503 666</a></li>
-              <li><a href="mailto:info@yazservices.com.au">info@yazservices.com.au</a></li>
-              <li><a href="https://www.instagram.com/yazservices" target="_blank" rel="noopener">@yazservices</a></li>
-              <li><a href="https://maps.app.goo.gl/oRzuxDyHsvMyvYzP9" target="_blank" rel="noopener">Google Maps</a></li>
+              <li><a href="#services">Renovations</a></li>
+              <li><a href="#services">Decking &amp; Pergolas</a></li>
+              <li><a href="#services">Fencing &amp; Ramps</a></li>
+              <li><a href="#services">Custom Carpentry</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 YAZ Services. All rights reserved.</p>
-        <p>Servicing Melbourne &amp; surrounding suburbs</p>
+        <p>&copy; 2026 Robert Green Carpenter. All rights reserved.</p>
+        <p>18 Stevens Rd, Forest Hill VIC 3131</p>
       </div>
     </div>
   </footer>
